@@ -18,6 +18,7 @@ public class WordCount_6 {
         for (String line : lines) {
             String[] words = line.split("\\s+");
             for (String word : words) {
+                word = word.replace(",", "");
                 wordsCount.put(word, 0);
             }
         }
