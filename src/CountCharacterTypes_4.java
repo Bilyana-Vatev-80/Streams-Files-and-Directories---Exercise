@@ -11,9 +11,12 @@ public class CountCharacterTypes_4 {
         int countVowels = 0;
         int contConsonants = 0;
         int countPunctuation = 0;
+
         String vowel = "aeiou";
         String punctuation = "!,.?";
+
         BufferedReader reader = new BufferedReader(new FileReader(pathFile));
+
         String line = reader.readLine();
         while (line != null) {
             String[] words = line.split("\\s+");
